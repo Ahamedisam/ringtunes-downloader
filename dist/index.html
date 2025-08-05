@@ -6,11 +6,343 @@
     <title>Ringtunes - Download your favourite Ringtones in Seconds</title>
 
     <!-- Tailwind css link -->
-    <link rel="stylesheet" crossorigin href="/ringtunes-downloader/assets/index-BGlzk8DV.css">
+    <link rel="stylesheet" crossorigin href="/ringtunes-downloader/assets/index-DkNNCQ-g.css">
   </head>
 
   <body>
-    <h1 class="text-red-500 text-xl">Ringing</h1>
+  <!-- Header section -->
+   <header class="bg-gray-900 text-white px-5 py-10 sm:px-20
+   sm:bg-[url(https://static.vecteezy.com/system/resources/thumbnails/005/004/846/small_2x/abstract-sound-wave-curve-background-illustration-with-gold-and-blue-particles-creative-colorful-equalizer-and-spectrum-music-for-banner-and-poster-vector.jpg)]">
+
+      <!-- App Title -->
+      <div class="flex justify-between items-center">
+        <div class="flex">
+          <h4 class="text-xl font-bold bg-gradient-to-r from-yellow-300 to-yellow-600 bg-clip-text text-transparent">Ringtunes</h4>
+           <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          width="32" 
+          height="32" 
+          class=" w-5 text-yellow-500"
+          viewBox="0 0 24 24">
+          
+          
+          <!-- Icon from Google Material Icons by Material Design Authors - https://github.com/material-icons/material-icons/blob/master/LICENSE -->
+           
+          <path 
+          fill="currentColor" 
+          d="M12 3v10.55c-.59-.34-1.27-.55-2-.55c-2.21 0-4 1.79-4 4s1.79 4 4 4s4-1.79 4-4V7h4V3z"/>
+          </svg>
+        </div>
+        <a 
+        href="https://ahamedisam.github.io/ringtunes-downloader/" 
+        target="_blank"
+        class="hover:text-yellow-500">
+          <svg 
+          
+          xmlns="http://www.w3.org/2000/svg" 
+          width="32" 
+          height="32" 
+          viewBox="0 0 24 24">
+
+          <!-- Icon from Material Design Icons by Pictogrammers - https://github.com/Templarian/MaterialDesign/blob/master/LICENSE -->
+           
+          <path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+        </a>
+      </div>
+
+      <!-- App Banner -->
+      <div class="text-center py-14 space-y-4">
+        <h3 class="text-3xl font-bold  ">Download <span class="bg-gradient-to-r from-yellow-300 to-yellow-600 bg-clip-text text-transparent">Ringtunes</span> <br><span class="text-xl">in a seconds</span></h3>
+
+          <div class="relative max-w-lg mx-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+        width="32" 
+        height="32" 
+        viewBox="0 0 16 16"
+        class="absolute left-1  top-1 p-0.5 text-gray-600 w-7">
+        
+          
+          <!-- Icon from Gitlab SVGs by GitLab B.V. - https://gitlab.com/gitlab-org/gitlab-svgs/-/blob/main/LICENSE -->
+           
+          <path fill="currentColor" fill-rule="evenodd" d="M11.5 7a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-.82 4.74a6 6 0 1 1 1.06-1.06l3.04 3.04a.75.75 0 1 1-1.06 1.06z" clip-rule="evenodd"/></svg>
+
+        <input type="text" 
+        placeholder="search by artist,movie name, etc."
+        class="px-4 py-2 rounded outline-none w-full text-gray-500 pr-4 pl-10 ">
+          </div>
+
+      </div>
+   </header>
+
+   <!--  -->
+   <div class="my-5 mx-5 sm:mx-10 space-y-4 sm:space-y-0 flex flex-col sm:flex-row sm:space-x-10">
+    <!-- Filters -->
+     <div class="bg-gray-200 p-5 rounded shadow space-y-4  w-full sm:max-w-sm ">
+      <h4 class=" font-semibold"> Filters</h4>
+        <div class="space-y-4">
+          <select name="Languages" id="Languages" class="px-4 py-2 rounded w-full">
+            <option value="">select Languages</option>
+            <option value="englis">English</option>
+            <option value="tamil">Tamil</option>
+            <option value="hindi">Hindi</option>
+          </select>
+
+          <select name="artist" id="Artist" class="px-4 py-2 rounded w-full">
+            <option value="">select Artist</option>
+            <option value="Andiruth Ravichandran">Aniruth Ravichandran</option>
+            <option value="Yuvan shankar Raja">Yuvan shankar raja</option>
+            <option value="Harris Jeyaraj">Harris Jeyaraj</option>
+            <opton value="ar-Rahman"> Ar-Rhaman</opton>
+          </select>
+          <input type="text" 
+          placeholder="Movie Title" 
+          class="px-2 py-2 rounded w-full outline-none"/>
+
+          <button class="px-4 py-2 rounded bg-yellow-600 text-white w-full font-semibold hover:bg-yellow-500">search</button>
+        </div>
+     </div>
+     <!-- contents -->
+      <div class="space-y-4">
+         <!-- categories -->
+     <section >
+      <h4 class="font-semibold">categories</h4>
+      <div class="flex space-x-4 mt-3">
+        <div class="gradient-clr"></div>
+        <div class="gradient-clr"></div>
+        <div class="gradient-clr"></div>
+        <div class="gradient-clr"></div>
+        
+      </div>
+     </section>
+
+     <!-- Browes by Actors -->
+     <section class="">
+      <h4 class="font-semibold ">Actors</h4>
+      <div class="flex space-x-4 mt-3 ">
+        <div class="gradient-clr"></div>
+        <div class="gradient-clr"></div>
+        <div class="gradient-clr"></div>
+        <div class="gradient-clr"></div>
+        
+      </div>
+     </section>
+
+    
+
+      </div>
+   
+   </div>
+   <hr class="pb-5">
+         <!-- popular Ringtones -->
+         <section class=" mx-5 sm:mx-10">
+          <h4 class="font-semibold" > Popular Ringtones</h4>
+           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                 <div class=" bg-gray-300 rounded p-3 mt-3 sm:w-80" >
+              <div class="flex space-x-2">
+                    <!-- Left content -->
+                    <div class="">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"
+                      class=" text-yellow-600">
+                      
+                      <!-- Icon from Gitlab SVGs by GitLab B.V. - https://gitlab.com/gitlab-org/gitlab-svgs/-/blob/main/LICENSE -->
+                      
+                      <path fill="currentColor" fill-rule="evenodd" d="M11.194.665a8 8 0 1 0 4.194 10.404a.75.75 0 0 0-1.385-.575a6.5 6.5 0 1 1-.526-5.994H11.75a.75.75 0 0 0 0 1.5H16V1.75a.75.75 0 0 0-1.5 0v1.586a8 8 0 0 0-3.306-2.67Zm-.423 6.913a.5.5 0 0 1 0 .844l-4.003 2.54A.5.5 0 0 1 6 10.538V5.461a.5.5 0 0 1 .768-.422z" clip-rule="evenodd"/>
+                    </svg>
+                    </div>
+                    <!-- Right Cotent -->
+                     <div class="space-y-2 flex-1 relative ">
+                      <span class="absolute right-0 bg-green-300 px-3 py-1 text-xs font-semibold uppercase white">Tmail</span>>
+                        <h4 class="font-semibold">Leo Rigtone (Bad)</h4>
+                        <small>Upload by Ahamed Isam</small>
+                        <p class="text-xs"> <strong> Music:</strong> <a href="#" class="hover:text-yellow-600"> Aniruth Ravichandran</a></p>
+                        <!-- span Elements -->
+                       <div class="pt-1 "> 
+                        
+                        <span class="px-2 py-1 rounded text-sm font-medium bg-yellow-400">25 sec</span>
+          
+                        <span class="px-2 py-1 rounded text-sm font-medium bg-yellow-400">1.5MB</span>
+          
+                        <span class="px-2 py-1 rounded text-sm font-medium bg-yellow-400 ">250+</span></div>
+                     </div>
+            
+              </div>
+                   <!-- Dowload Button -->
+                    <div>
+                      <button class="px-4 py-2 rounded bg-green-600 hover:bg-green-700 w-full mt-4 tetx-sm text-white font:semibold"> Download Now</button>
+                    </div>
+                 </div>
+                 <div class=" bg-gray-300 rounded p-3 mt-3 sm:w-80" >
+                  <div class="flex space-x-2">
+                        <!-- Left content -->
+                        <div class="">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"
+                          class=" text-yellow-600">
+                          
+                          <!-- Icon from Gitlab SVGs by GitLab B.V. - https://gitlab.com/gitlab-org/gitlab-svgs/-/blob/main/LICENSE -->
+                          
+                          <path fill="currentColor" fill-rule="evenodd" d="M11.194.665a8 8 0 1 0 4.194 10.404a.75.75 0 0 0-1.385-.575a6.5 6.5 0 1 1-.526-5.994H11.75a.75.75 0 0 0 0 1.5H16V1.75a.75.75 0 0 0-1.5 0v1.586a8 8 0 0 0-3.306-2.67Zm-.423 6.913a.5.5 0 0 1 0 .844l-4.003 2.54A.5.5 0 0 1 6 10.538V5.461a.5.5 0 0 1 .768-.422z" clip-rule="evenodd"/>
+                        </svg>
+                        </div>
+                        <!-- Right Cotent -->
+                         <div class="space-y-2 flex-1 relative ">
+                          <span class="absolute right-0 bg-green-300 px-3 py-1 text-xs font-semibold uppercase white">Tmail</span>>
+                            <h4 class="font-semibold">Leo Rigtone (Bad)</h4>
+                            <small>Upload by Ahamed Isam</small>
+                            <p class="text-xs"> <strong> Music:</strong> <a href="#" class="hover:text-yellow-600"> Aniruth Ravichandran</a></p>
+                            <!-- span Elements -->
+                           <div class="pt-1 "> 
+                            
+                            <span class="px-2 py-1 rounded text-sm font-medium bg-yellow-400">25 sec</span>
+              
+                            <span class="px-2 py-1 rounded text-sm font-medium bg-yellow-400">1.5MB</span>
+              
+                            <span class="px-2 py-1 rounded text-sm font-medium bg-yellow-400 ">250+</span></div>
+                         </div>
+                
+                  </div>
+                       <!-- Dowload Button -->
+                        <div>
+                          <button class="px-4 py-2 rounded bg-green-600 hover:bg-green-700 w-full mt-4 tetx-sm text-white font:semibold"> Download Now</button>
+                        </div>
+                 </div>
+                 <div class=" bg-gray-300 rounded p-3 mt-3 sm:w-80" >
+                      <div class="flex space-x-2">
+                            <!-- Left content -->
+                            <div class="">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"
+                              class=" text-yellow-600">
+                              
+                              <!-- Icon from Gitlab SVGs by GitLab B.V. - https://gitlab.com/gitlab-org/gitlab-svgs/-/blob/main/LICENSE -->
+                              
+                              <path fill="currentColor" fill-rule="evenodd" d="M11.194.665a8 8 0 1 0 4.194 10.404a.75.75 0 0 0-1.385-.575a6.5 6.5 0 1 1-.526-5.994H11.75a.75.75 0 0 0 0 1.5H16V1.75a.75.75 0 0 0-1.5 0v1.586a8 8 0 0 0-3.306-2.67Zm-.423 6.913a.5.5 0 0 1 0 .844l-4.003 2.54A.5.5 0 0 1 6 10.538V5.461a.5.5 0 0 1 .768-.422z" clip-rule="evenodd"/>
+                            </svg>
+                            </div>
+                            <!-- Right Cotent -->
+                             <div class="space-y-2 flex-1 relative ">
+                              <span class="absolute right-0 bg-green-300 px-3 py-1 text-xs font-semibold uppercase white">Tmail</span>>
+                                <h4 class="font-semibold">Leo Rigtone (Bad)</h4>
+                                <small>Upload by Ahamed Isam</small>
+                                <p class="text-xs"> <strong> Music:</strong> <a href="#" class="hover:text-yellow-600"> Aniruth Ravichandran</a></p>
+                                <!-- span Elements -->
+                               <div class="pt-1 "> 
+                                
+                                <span class="px-2 py-1 rounded text-sm font-medium bg-yellow-400">25 sec</span>
+                  
+                                <span class="px-2 py-1 rounded text-sm font-medium bg-yellow-400">1.5MB</span>
+                  
+                                <span class="px-2 py-1 rounded text-sm font-medium bg-yellow-400 ">250+</span></div>
+                             </div>
+                    
+                      </div>
+                           <!-- Dowload Button -->
+                            <div>
+                              <button class="px-4 py-2 rounded bg-green-600 hover:bg-green-700 w-full mt-4 tetx-sm text-white font:semibold"> Download Now</button>
+                            </div>
+                 </div>
+                 <div class=" bg-gray-300 rounded p-3 mt-3 sm:w-80" >
+                          <div class="flex space-x-2">
+                                <!-- Left content -->
+                                <div class="">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"
+                                  class=" text-yellow-600">
+                                  
+                                  <!-- Icon from Gitlab SVGs by GitLab B.V. - https://gitlab.com/gitlab-org/gitlab-svgs/-/blob/main/LICENSE -->
+                                  
+                                  <path fill="currentColor" fill-rule="evenodd" d="M11.194.665a8 8 0 1 0 4.194 10.404a.75.75 0 0 0-1.385-.575a6.5 6.5 0 1 1-.526-5.994H11.75a.75.75 0 0 0 0 1.5H16V1.75a.75.75 0 0 0-1.5 0v1.586a8 8 0 0 0-3.306-2.67Zm-.423 6.913a.5.5 0 0 1 0 .844l-4.003 2.54A.5.5 0 0 1 6 10.538V5.461a.5.5 0 0 1 .768-.422z" clip-rule="evenodd"/>
+                                </svg>
+                                </div>
+                                <!-- Right Cotent -->
+                                 <div class="space-y-2 flex-1 relative ">
+                                  <span class="absolute right-0 bg-green-300 px-3 py-1 text-xs font-semibold uppercase white">Tmail</span>>
+                                    <h4 class="font-semibold">Leo Rigtone (Bad)</h4>
+                                    <small>Upload by Ahamed Isam</small>
+                                    <p class="text-xs"> <strong> Music:</strong> <a href="#" class="hover:text-yellow-600"> Aniruth Ravichandran</a></p>
+                                    <!-- span Elements -->
+                                   <div class="pt-1 "> 
+                                    
+                                    <span class="px-2 py-1 rounded text-sm font-medium bg-yellow-400">25 sec</span>
+                      
+                                    <span class="px-2 py-1 rounded text-sm font-medium bg-yellow-400">1.5MB</span>
+                      
+                                    <span class="px-2 py-1 rounded text-sm font-medium bg-yellow-400 ">250+</span></div>
+                                 </div>
+                        
+                          </div>
+                               <!-- Dowload Button -->
+                                <div>
+                                  <button class="px-4 py-2 rounded bg-green-600 hover:bg-green-700 w-full mt-4 tetx-sm text-white font:semibold"> Download Now</button>
+                                </div>
+                 </div>
+                 <div class=" bg-gray-300 rounded p-3 mt-3 sm:w-80" >
+                  <div class="flex space-x-2">
+                        <!-- Left content -->
+                        <div class="">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"
+                          class=" text-yellow-600">
+                          
+                          <!-- Icon from Gitlab SVGs by GitLab B.V. - https://gitlab.com/gitlab-org/gitlab-svgs/-/blob/main/LICENSE -->
+                          
+                          <path fill="currentColor" fill-rule="evenodd" d="M11.194.665a8 8 0 1 0 4.194 10.404a.75.75 0 0 0-1.385-.575a6.5 6.5 0 1 1-.526-5.994H11.75a.75.75 0 0 0 0 1.5H16V1.75a.75.75 0 0 0-1.5 0v1.586a8 8 0 0 0-3.306-2.67Zm-.423 6.913a.5.5 0 0 1 0 .844l-4.003 2.54A.5.5 0 0 1 6 10.538V5.461a.5.5 0 0 1 .768-.422z" clip-rule="evenodd"/>
+                        </svg>
+                        </div>
+                        <!-- Right Cotent -->
+                         <div class="space-y-2 flex-1 relative ">
+                          <span class="absolute right-0 bg-green-300 px-3 py-1 text-xs font-semibold uppercase white">Tmail</span>>
+                            <h4 class="font-semibold">Leo Rigtone (Bad)</h4>
+                            <small>Upload by Ahamed Isam</small>
+                            <p class="text-xs"> <strong> Music:</strong> <a href="#" class="hover:text-yellow-600"> Aniruth Ravichandran</a></p>
+                            <!-- span Elements -->
+                           <div class="pt-1 "> 
+                            
+                            <span class="px-2 py-1 rounded text-sm font-medium bg-yellow-400">25 sec</span>
+              
+                            <span class="px-2 py-1 rounded text-sm font-medium bg-yellow-400">1.5MB</span>
+              
+                            <span class="px-2 py-1 rounded text-sm font-medium bg-yellow-400 ">250+</span></div>
+                         </div>
+                
+                  </div>
+                       <!-- Dowload Button -->
+                        <div>
+                          <button class="px-4 py-2 rounded bg-green-600 hover:bg-green-700 w-full mt-4 tetx-sm text-white font:semibold"> Download Now</button>
+                        </div>
+                 </div>
+                 <div class=" bg-gray-300 rounded p-3 mt-3 sm:w-80" >
+          <div class="flex space-x-2">
+                <!-- Left content -->
+                <div class="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"
+                  class=" text-yellow-600">
+                  
+                  <!-- Icon from Gitlab SVGs by GitLab B.V. - https://gitlab.com/gitlab-org/gitlab-svgs/-/blob/main/LICENSE -->
+                  
+                  <path fill="currentColor" fill-rule="evenodd" d="M11.194.665a8 8 0 1 0 4.194 10.404a.75.75 0 0 0-1.385-.575a6.5 6.5 0 1 1-.526-5.994H11.75a.75.75 0 0 0 0 1.5H16V1.75a.75.75 0 0 0-1.5 0v1.586a8 8 0 0 0-3.306-2.67Zm-.423 6.913a.5.5 0 0 1 0 .844l-4.003 2.54A.5.5 0 0 1 6 10.538V5.461a.5.5 0 0 1 .768-.422z" clip-rule="evenodd"/>
+                </svg>
+                </div>
+                <!-- Right Cotent -->
+                 <div class="space-y-2 flex-1 relative ">
+                  <span class="absolute right-0 bg-green-300 px-3 py-1 text-xs font-semibold uppercase white">Tmail</span>>
+                    <h4 class="font-semibold">Leo Rigtone (Bad)</h4>
+                    <small>Upload by Ahamed Isam</small>
+                    <p class="text-xs"> <strong> Music:</strong> <a href="#" class="hover:text-yellow-600"> Aniruth Ravichandran</a></p>
+                    <!-- span Elements -->
+                   <div class="pt-1 "> 
+                    
+                    <span class="px-2 py-1 rounded text-sm font-medium bg-yellow-400">25 sec</span>
+      
+                    <span class="px-2 py-1 rounded text-sm font-medium bg-yellow-400">1.5MB</span>
+      
+                    <span class="px-2 py-1 rounded text-sm font-medium bg-yellow-400 ">250+</span></div>
+                 </div>
+        
+          </div>
+               <!-- Dowload Button -->
+                <div>
+                  <button class="px-4 py-2 rounded bg-green-600 hover:bg-green-700 w-full mt-4 tetx-sm text-white font:semibold"> Download Now</button>
+                </div>
+                 </div>
+           </div>
+         </section>
   </body>
 
 </html>
