@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.gradient-clr{
+    @apply w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded bg-gradient-to-br from-gray-500 via-white to-yellow-700 
+  }
+  .actors{
+    @apply w-20 h-20 sm:w-44 sm:h-44 rounded }
